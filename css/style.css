@@ -326,6 +326,16 @@ nav .dropdown-item:hover {
   color: #fff;
   margin: 0 10%;
 }
+@media (max-width: 576px) {
+  .aboutmactec .backimg .overlay div div p {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .aboutmactec .backimg .overlay div div p {
+    margin: 0;
+  }
+}
 .aboutmactec .backimg .overlay div div p span {
   background-color: #faaf41;
   height: 3px !important;

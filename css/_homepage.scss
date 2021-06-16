@@ -361,6 +361,12 @@ nav {
                     p {
                         color: $color-white;
                         margin: 0 10%;
+                        @include sm {
+                            margin: 0;
+                        }
+                        @include md {
+                            margin: 0;
+                        }
 
                         span {
                             background-color: $color-bransh;
