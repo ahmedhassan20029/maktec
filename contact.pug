@@ -12,12 +12,18 @@ block pageContent
                 hr
                 +listInfo
     div(class='info-box container')
-        form(class='row' action="", method="post")
-            input(type="text" class='col-5' placeholder='الاسم' required)
+        p(class='hvr-underline-from-center') لطلب عرض اسعار
+        form(class='row' action="")
+            input(id="bot" type="text" class='col-5' placeholder='الاسم' required)
             input(type="email" name="email user" class='col-5' placeholder='الاميل' required)
             input(class="col-11" type="tel" name="" placeholder="التليفون" required)
             input(type="text" class='col-11' placeholder='رسالتك' required)
-            input(type="submit" value="إرسال")
-
+            input(id='sent' type="submit", value="أرسال" required) 
+            div(id="msent" class="alert alert-success" role="alert") تم ارسال رسالتك
+script 
+    | document.getElementById('sent').onclick = function() {
+    |    document.getElementById('msent').style.display = 'block';
+    |    }
+            
 block script
     script(src='js/bootstrap.bundle.min.js')

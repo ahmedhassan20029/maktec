@@ -87,14 +87,21 @@
       </div>
     </div>
     <div class="info-box container">
-      <form class="row" action="" method="post">
+      <p class="hvr-underline-from-center">لطلب عرض اسعار</p>
+      <form class="row" action="">
         <input class="col-5" type="text" placeholder="الاسم" required>
         <input class="col-5" type="email" name="email user" placeholder="الاميل" required>
         <input class="col-11" type="tel" name="" placeholder="التليفون" required>
         <input class="col-11" type="text" placeholder="رسالتك" required>
-        <input type="submit" value="إرسال">
+        <input id="sent" type="submit" value="أرسال" required>
+        <div class="alert alert-success" id="msent" role="alert">تم ارسال رسالتك</div>
       </form>
     </div>
+    <script>
+       document.getElementById('sent').onclick = function() {
+         document.getElementById('msent').style.display = 'block';
+         }
+    </script>
     <footer>
       <div class="overlay">
         <div class="container">

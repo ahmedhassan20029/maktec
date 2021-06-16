@@ -53,3 +53,6 @@ window.onload = function () { // start relowd page
         focus: 'center',
     }).mount();
 }; // close relowd page
+if(document.getElementById('bot') > value) {
+    console.log('yes');
+}

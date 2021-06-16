@@ -51,6 +51,13 @@
 }
 .info-box {
     margin-top: $space-div;
+    text-align: center;
+    p {
+        margin-bottom: 3%;
+        font-size: 22px;
+        color: $color-head;
+        padding-bottom: 2px;
+    }
     form {
         justify-content: space-around;
         input {
@@ -67,6 +74,11 @@
             width: 200px;
             background-color: $color-bransh;
             color: $color-white;
+            border: none;
+            border-radius: 3px;
+        }
+        div {
+            display: none;
         }
     }
 }

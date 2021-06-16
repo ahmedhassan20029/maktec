@@ -899,6 +899,13 @@ footer .overlay .macro div:nth-child(2) {
 
 .info-box {
   margin-top: 5%;
+  text-align: center;
+}
+.info-box p {
+  margin-bottom: 3%;
+  font-size: 22px;
+  color: #003366;
+  padding-bottom: 2px;
 }
 .info-box form {
   justify-content: space-around;
@@ -917,6 +924,11 @@ footer .overlay .macro div:nth-child(2) {
   width: 200px;
   background-color: #faaf41;
   color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+.info-box form div {
+  display: none;
 }
 
 /*start section web*/
