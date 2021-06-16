@@ -20,10 +20,10 @@ block pageContent
             input(type="text" class='col-11' placeholder='رسالتك' required)
             input(id='sent' type="submit", value="أرسال" required) 
             div(id="msent" class="alert alert-success" role="alert") تم ارسال رسالتك
-script 
-    | document.getElementById('sent').onclick = function() {
-    |    document.getElementById('msent').style.display = 'block';
-    |    }
+    script 
+        | document.getElementById('sent').onclick = function() {
+        |    document.getElementById('msent').style.display = 'block';
+        |    }
             
 block script
     script(src='js/bootstrap.bundle.min.js')
