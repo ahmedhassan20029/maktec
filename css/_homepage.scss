@@ -1,0 +1,888 @@
+/*
+    Templete Name: Mactec
+    programer Name: ahmed hussan
+    Date start: 3/6/2021
+    Date end:.......
+    Version: 0.0.1
+    Email: ahmedhassan2002@gmail.com
+    URL Facebook:
+*/
+* {
+    box-sizing: border-box;
+}
+
+/*clear page*/
+.clear {
+    margin: 100px 5%;
+    text-align: center;
+    font-size: 40px;
+
+    h2 {
+        font-size: 220px;
+    }
+}
+
+@font-face {
+    font-family: "Cairo-SemiBold";
+    src: url(../font/Cairo-SemiBold.ttf);
+}
+
+body {
+    background-color: #f5f2f2;
+    font-family: "Cairo-SemiBold";
+}
+
+/*reset list*/
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/*start header*/
+header {
+    border-bottom: 2px solid #eee;
+
+    div:nth-child(1) {
+        div {
+            @include sm {
+                text-align: center;
+            }
+
+            @include md {
+                text-align: center;
+            }
+
+            ul {
+                display: flex;
+                margin-top: .5%;
+
+                @include sm {
+                    order: 2;
+                    display: block;
+                }
+
+                @include md {
+                    order: 2;
+                    display: block;
+                }
+
+                li {
+                    list-style: none;
+                    padding: 10px;
+
+                    @include sm {
+                        display: inline-flex;
+                    }
+
+                    @include md {
+                        display: inline-flex;
+                    }
+                }
+
+                a {
+                    color: gray;
+                }
+
+                li:nth-child(1) {
+                    &:hover i {
+                        color: #3b5998;
+                    }
+                }
+
+                li:nth-child(2) {
+                    &:hover i {
+                        color: #1da1f2;
+                    }
+                }
+
+                li:nth-child(3) {
+                    &:hover i {
+                        color: #f56040;
+                    }
+                }
+
+                li:nth-child(4) {
+                    &:hover i {
+                        color: red;
+                    }
+                }
+
+                li:nth-child(5) {
+                    &:hover i {
+                        color: #0077b5;
+                    }
+                }
+
+                li:nth-child(6) {
+                    &:hover i {
+                        color: red;
+                    }
+                }
+            }
+
+            div {
+                direction: ltr;
+
+                @include sm {
+                    order: 1;
+                }
+
+                @include md {
+                    order: 1;
+                }
+
+                img {
+                    height: 55px;
+                    width: 80px;
+
+                    @include sm {
+                        margin-top: 2%;
+                    }
+
+                    @include md {
+                        margin-top: 2%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*end header*/
+/* start nav */
+nav {
+    @include sm {
+        position: static !important;
+    }
+
+    @include md {
+        position: static !important;
+    }
+
+    @include lg {
+        position: static !important;
+    }
+
+    .nav-item {
+        margin: 0 10px;
+    }
+
+    .nav-head {
+        justify-content: center !important;
+
+        @include sm {
+            justify-content: start !important;
+        }
+
+        @include md {
+            justify-content: start !important;
+        }
+
+        @include lg {
+            justify-content: start !important;
+        }
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+
+    .nav-link {
+        color: black !important;
+    }
+
+    .dropdown-menu {
+        display: none !important;
+    }
+
+    .shot {
+        &:hover {
+
+            .dropdown-menu {
+                display: block !important;
+                transition: all 2s ease-in-out;
+            }
+        }
+    }
+
+    .dropdown-item {
+        padding: 10px 30px;
+
+        &:hover {
+            font-size: $font-p;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+/* end nav */
+/* start slider */
+.slider {
+    h5 {
+        position: relative;
+        color: $color-bransh;
+        font-size: $font-h;
+
+        @include sm {
+            font-size: $font-h - 5;
+        }
+    }
+
+    p {
+        color: $color-white;
+        font-size: $font-p;
+
+        @include sm {
+            font-size: $font-p - 5;
+        }
+    }
+
+    .carousel-item {
+        height: 500px;
+
+        @include sm {
+            height: 300px;
+        }
+
+        @include md {
+            height: 300px;
+        }
+
+        @include lg {
+            height: 300;
+        }
+    }
+
+    img {
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .overshow {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(6 6 6 / 46%);
+        position: absolute;
+        top: 0;
+        z-index: 0;
+    }
+}
+
+/* end slider */
+/*start section 1*/
+.hlper {
+    margin-top: $space-div;
+
+    div {
+        text-align: center;
+
+        h1 {
+            display: inline-block;
+            margin-bottom: $space-div;
+            color: $color-head;
+            font-size: $font-h;
+
+            &::after {
+                content: "";
+                background: #FAAF41;
+                height: 4px;
+                width: 100%;
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .sections-one {
+        text-align: center;
+
+        article {
+            margin-bottom: $space-div;
+
+            &:hover i {
+                color: $color-bransh;
+            }
+
+            i {
+                font-size: 70px;
+                color: $color-gray;
+                margin-bottom: 5%;
+            }
+
+            h6 {
+                font-size: $font-h;
+            }
+
+            p {
+                color: $color-gray;
+                margin: 0 5%;
+                font-size: 15px;
+                line-height: 1.95;
+
+                @include xl {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+/*end section 1*/
+/*start aboutmactec*/
+.aboutmactec {
+    .backimg {
+
+        background-image: url("../img/aboutmactec.jpg");
+        background-size: cover;
+
+        .overlay {
+            height: 100%;
+            background-color: rgba($color: $color-head, $alpha: .5);
+            height: 400px;
+            display: flex;
+            align-items: center;
+
+            div {
+                div {
+                    color: $color-white;
+                    height: 50%;
+                    text-align: center;
+
+                    p {
+                        color: $color-white;
+                        margin: 0 10%;
+
+                        span {
+                            background-color: $color-bransh;
+                            height: 3px !important;
+                            width: 100px;
+                            margin-top: 7px;
+                            display: block;
+                        }
+                    }
+
+                    p:nth-child(1) {
+                        font-size: $font-h + 2;
+                        display: inline-block;
+                        font-weight: bold;
+                        margin-bottom: 2%;
+                    }
+
+                    p:nth-child(2) {
+                        height: 50%;
+                        line-height: 2;
+                        font-size: $font-p;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*end aboutmactec*/
+/*start services*/
+.services {
+    margin-top: $space-div;
+
+    .prgf {
+        text-align: center;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 80px;
+            color: $color-head;
+            font-weight: bold;
+            font-size: $font-h;
+            display: inline-block;
+
+            &::after {
+                content: "";
+                background: #FAAF41;
+                height: 4px;
+                width: 100%;
+                display: block;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    article {
+        .one-ser {
+            .test {
+                background-color: $color-white;
+                border-radius: 5px;
+                margin-bottom: 100px;
+                text-align: center;
+
+                &:hover {
+                    box-shadow: 8px 10px 11px 3px #dad3d3;
+                }
+
+                &:hover i {
+                    color: $color-bransh;
+                }
+
+                &:hover button {
+                    background: $color-bransh;
+                }
+            }
+        }
+
+        i {
+            font-size: 32px;
+            color: $color-gray;
+            border: 4px solid #eee;
+            border-radius: 50%;
+            padding: 29px;
+            position: relative;
+            top: -60px;
+            background-color: $color-white;
+        }
+
+        h6 {
+            font-size: $font-h;
+        }
+
+        p {
+            color: $color-gray;
+            padding: 15px;
+        }
+
+        button {
+            border: none;
+            width: 100px;
+            height: 41px;
+            background-color: $color-gray;
+
+            a {
+                color: $color-white;
+                text-decoration: none;
+            }
+        }
+
+        h6,
+        p,
+        button {
+            position: relative;
+            top: -40px;
+        }
+    }
+}
+
+/*end services*/
+/*start clints*/
+.clints {
+    background-color: $color-white;
+    text-align: center;
+
+    div:nth-child(1) {
+        h4 {
+            font-size: $font-h + 8;
+            color: $color-head;
+            padding: 5% 0 1% 0;
+
+            @include sm {
+                font-size: $font-h;
+
+            }
+
+            @include md {
+                font-size: $font-h;
+            }
+
+            @include lg {
+                font-size: $font-h;
+            }
+        }
+
+        p {
+            color: $color-gray;
+            font-size: $font-p;
+
+            @include sm {
+                font-size: $font-p - 2;
+            }
+        }
+    }
+
+    .post {
+        padding: 0 0 5% 0;
+
+        div {
+            @include sm {
+                width: 50%;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            ul {
+                li {
+                    font-size: $font-h + 5;
+                    color: $color-bransh;
+
+                    @include sm {
+                        font-size: $font-h - 3;
+                    }
+
+                    @include md {
+                        font-size: $font-h - 3;
+                    }
+
+                    @include lg {
+                        font-size: $font-h - 3;
+                    }
+
+                    span {
+                        font-size: $font-h + 20;
+                        color: $color-head;
+
+                        @include sm {
+                            font-size: $font-h - 3;
+                        }
+
+                        @include md {
+                            font-size: $font-h - 3;
+                        }
+
+                        @include lg {
+                            font-size: $font-h - 3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*end clints*/
+/*start worktcnic*/
+.worktcnic {
+    text-align: center;
+    margin-top: 100px;
+
+    h4 {
+        font-size: $font-h;
+        margin-bottom: 50px;
+        color: $color-head;
+    }
+
+    .slidbar {
+        img {
+            width: 120px;
+            margin: 0 25px;
+            height: 90px;
+            border-radius: 6%;
+
+            @include sm {
+                width: 100px;
+                height: 80px;
+            }
+        }
+    }
+
+    .splide__pagination {
+        top: 90px;
+    }
+
+    .splide__pagination__page {
+        background-color: $color-bransh;
+    }
+}
+
+/*end worktcnic*/
+/* start team */
+.team {
+    margin-top: $space-div;
+    text-align: center;
+
+    @include sm {
+        margin-top: $space-div + 10;
+    }
+
+    @include md {
+        margin-top: $space-div + 10;
+    }
+
+    div:nth-child(1) {
+        h4 {
+            color: $color-head;
+            font-size: $font-h;
+        }
+
+        p {
+            color: $color-gray;
+            font-size: $font-p;
+        }
+    }
+
+    div:nth-child(2) {
+        ul {
+            margin: 0 8%;
+
+            li {
+                @include sm {
+                    width: 50%;
+                }
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin: 35px 10px;
+                    border-radius: 50%;
+
+                    @include sm {
+                        width: 120px;
+                        height: 100px;
+                    }
+
+                    @include md {
+                        width: 100px;
+                        height: 100px;
+                    }
+
+                    @include lg {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* End team */
+/* start footer */
+footer {
+    margin-top: $space-div;
+    background-image: url('../img/fmap.jpg');
+
+    .overlay {
+        background: linear-gradient(100deg, rgb(211 128 37), rgb(233 176 15) 25%, rgb(232 107 240));
+        height: 100%;
+        width: 100%;
+        opacity: 0.9;
+
+        .macro {
+            color: $color-white;
+
+            div:nth-child(1) {
+                h5 {
+                    margin-right: 5%;
+                    font-size: $font-h;
+                }
+
+                ul {
+                    margin-right: 7%;
+
+                    li {
+                        margin-top: 2%;
+
+                        a {
+                            color: $color-white;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: $color-bransh;
+                            }
+                        }
+                    }
+                }
+
+                .folink {
+                    display: flex;
+                    margin-top: .5%;
+
+                    li {
+                        list-style: none;
+                        padding: 10px;
+                    }
+
+                    a {
+                        color: $color-white;
+                    }
+
+                    li:nth-child(5) {
+                        &:hover i {
+                            color: #3b5998;
+                        }
+                    }
+
+                    li:nth-child(2) {
+                        &:hover i {
+                            color: #1da1f2;
+                        }
+                    }
+
+                    li:nth-child(4) {
+                        &:hover i {
+                            color: #f56040;
+                        }
+                    }
+
+                    li:nth-child(3) {
+                        &:hover i {
+                            color: red;
+                        }
+                    }
+
+                    li:nth-child(1) {
+                        &:hover i {
+                            color: #0077b5;
+                        }
+                    }
+                }
+
+                iframe {
+                    width: 243px;
+                    height: 97px;
+                }
+            }
+
+            div:nth-child(2) {
+                h5 {
+                    font-size: $font-h;
+                }
+
+                ul {
+                    margin-right: 5%;
+                    height: 215px;
+
+                    li {
+                        margin-bottom: 5%;
+                        width: 100%;
+
+                        a {
+                            text-decoration: none;
+                            color: $color-white;
+                            font-size: $font-p;
+
+                            &:hover {
+                                color: $color-bransh;
+                                font-size: 20px;
+                                transition: all .4s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+
+            div:nth-child(3) {
+                text-align: center;
+                margin-top: 3%;
+
+                img {
+                    width: 190px;
+                    height: 50px;
+                }
+
+                p {
+                    line-height: 2;
+                    margin: 0 5%;
+                }
+            }
+        }
+
+        hr {
+            border: none;
+        }
+
+        .copyright {
+            text-align: center;
+            color: $color-white;
+            height: 40px;
+
+            p {
+                a {
+                    color: $color-head;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        /*proparty mgma*/
+        .macro div:nth-child(1),
+        .macro div:nth-child(2) {
+            margin-top: 3%;
+        }
+    }
+}
+
+/*start app */
+.app {
+    position: fixed;
+    bottom: 20px;
+    z-index: 999999;
+
+    a:nth-child(1) {
+        color: #25d366;
+        display: block;
+    }
+
+    a:nth-child(2) {
+        color: #0084ff;
+        display: block;
+    }
+
+    a:nth-child(3) {
+        color: $color-bransh;
+        display: block;
+    }
+
+    i {
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+
+/*end app */
+
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+.hvr-bounce-to-top:before {
+    background: $color-bransh;
+}
+
+/*header page color*/
+.hlper .sections-one h6,
+.services article h6,
+.clints .post1 h4 {
+    color: $color-head;
+}
+
+/* loading */
+.loading {
+    justify-content: center;
+    align-content: center;
+    height: 500px;
+    top: 0;
+    display: none;
+}

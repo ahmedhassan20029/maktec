@@ -1,0 +1,23 @@
+extends index.pug
+include includs/mixin.pug
+block titleName
+    title تواصل معنا 
+block pageContent
+    div(class='container')
+        div(class='contact row')
+            div(class='col-sm-12 col-md-12 col-lg-4')
+                iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.284096347573!2d31.35977028488457!3d30.05739008187755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458415af6325d4f%3A0x2c6f3fa8393d0d81!2z2YXYp9mDINiq2YMg2YTZhNiq2LPZiNmK2YIg2KfZhNin2YTZg9iq2LHZiNmG2Yo!5e0!3m2!1sar!2seg!4v1623152407126!5m2!1sar!2seg" style="border:0;" allowfullscreen="" loading="lazy")
+            div(class='col-sm-12 col-md-12 col-lg-8')
+                p مرحبا بك فى موقع ماك تك يسعدنا التواصل معكم من خلال:
+                hr
+                +listInfo
+    div(class='info-box container')
+        form(class='row' action="", method="post")
+            input(type="text" class='col-5' placeholder='الاسم' required)
+            input(type="email" name="email user" class='col-5' placeholder='الاميل' required)
+            input(class="col-11" type="tel" name="" placeholder="التليفون" required)
+            input(type="text" class='col-11' placeholder='رسالتك' required)
+            input(type="submit" value="إرسال")
+
+block script
+    script(src='js/bootstrap.bundle.min.js')
