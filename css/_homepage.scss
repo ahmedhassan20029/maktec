@@ -363,9 +363,11 @@ nav {
                         margin: 0 10%;
                         @include sm {
                             margin: 0;
+                            font-size: 12px;
                         }
                         @include md {
                             margin: 0;
+                            font-size: 12px;
                         }
 
                         span {

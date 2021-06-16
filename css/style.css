@@ -329,11 +329,13 @@ nav .dropdown-item:hover {
 @media (max-width: 576px) {
   .aboutmactec .backimg .overlay div div p {
     margin: 0;
+    font-size: 12px;
   }
 }
 @media (max-width: 768px) {
   .aboutmactec .backimg .overlay div div p {
     margin: 0;
+    font-size: 12px;
   }
 }
 .aboutmactec .backimg .overlay div div p span {
