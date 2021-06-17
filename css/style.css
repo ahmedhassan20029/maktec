@@ -227,12 +227,12 @@ nav .dropdown-item:hover {
 }
 @media (max-width: 576px) {
   .slider .carousel-item {
-    height: 300px !important;
+    height: 200px !important;
   }
 }
 @media (max-width: 768px) {
   .slider .carousel-item {
-    height: 300px !important;
+    height: 200px !important;
   }
 }
 .slider .carousel-item .carousel-caption {
@@ -245,8 +245,9 @@ nav .dropdown-item:hover {
 }
 .slider .carousel-item .carousel-caption div {
   margin-left: 20% !important;
-  direction: ltr !important;
-  text-align: left !important;
+  /*direction: ltr !important;*/
+  text-align: center !important;
+  margin-right: 25%;
 }
 @media (max-width: 576px) {
   .slider .carousel-item .carousel-caption div {
@@ -264,14 +265,14 @@ nav .dropdown-item:hover {
   background: #f2ce1b;
   border: none;
   opacity: 1;
-  margin: 0;
-  text-align: inherit;
+  --animate-duration: 1s;
 }
 .slider .carousel-item .carousel-caption div h5 {
   font-size: 40px;
   font-family: "Cairo-Bold";
   margin-top: 3%;
   line-height: 1.5;
+  --animate-duration: 1s;
 }
 @media (max-width: 576px) {
   .slider .carousel-item .carousel-caption div h5 {
@@ -296,6 +297,7 @@ nav .dropdown-item:hover {
   font-weight: bold;
   font-family: "Cairo-Bold";
   margin-top: 2%;
+  --animate-duration: 1s;
 }
 @media (max-width: 576px) {
   .slider .carousel-item .carousel-caption div button {
@@ -311,7 +313,13 @@ nav .dropdown-item:hover {
 }
 .slider .carousel-item .carousel-caption div button:hover {
   margin-top: 1.5%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.slider .carousel-item .carousel-caption .mar {
+  margin-right: 20%;
+}
+.slider .carousel-item .carousel-caption .mar .floter {
+  margin-right: 20%;
 }
 .slider img {
   min-width: 100%;

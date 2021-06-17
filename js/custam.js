@@ -1,7 +1,7 @@
+new WOW().init();
 window.onload = function () { // start relowd page
     "use strict";
     // wow animation
-    new WOW().init();
     window.onscroll = function () {
         'use strict';
         // start function run

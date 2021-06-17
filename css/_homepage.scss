@@ -251,11 +251,11 @@ nav {
     .carousel-item {
         height: 500px;
         @include sm {
-            height: 300px !important;
+            height: 200px !important;
         }
 
         @include md {
-            height: 300px !important;
+            height: 200px !important;
         }
         .carousel-caption {
             bottom: 0 !important;
@@ -266,8 +266,9 @@ nav {
             color: #F2CE1B;
             div {
                 margin-left: 20% !important;
-                direction: ltr !important;
-                text-align: left !important;
+                /*direction: ltr !important;*/
+                text-align: center !important;
+                margin-right: 25%;
                 @include sm {
                     margin-left: 40% !important;
                 }
@@ -281,8 +282,7 @@ nav {
                     background: #f2ce1b;
                     border: none;
                     opacity: 1;
-                    margin: 0;
-                    text-align: inherit;
+                    --animate-duration: 1s;
                 }
 
                 h5 {
@@ -291,6 +291,7 @@ nav {
                     font-family: "Cairo-Bold";
                     margin-top: 3%;
                     line-height: 1.5;
+                    --animate-duration: 1s;
                     @include sm {
                         font-size: $font-p - 2;
                     }
@@ -314,6 +315,7 @@ nav {
                     font-weight: bold;
                     font-family: "Cairo-Bold";
                     margin-top: 2%;
+                    --animate-duration: 1s;
                     @include sm {
                         font-size: $font-p - 2;
                         padding: 1% 3%;
@@ -325,8 +327,14 @@ nav {
                     }
                     &:hover {
                         margin-top: 1.5%;
-                        transition: all .3s ease-in-out;
+                        transition: all .1s ease-in-out;
                     }
+                }
+            }
+            .mar {
+                margin-right: 20%;
+                .floter {
+                    margin-right: 20%;
                 }
             }
         }
