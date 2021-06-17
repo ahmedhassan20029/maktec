@@ -249,17 +249,14 @@ nav {
 /* start slider */
 .slider {
     .carousel-item {
-        height: 400px;
+        height: 500px;
         @include sm {
             height: 300px !important;
         }
 
         @include md {
+            height: 300px !important;
         }
-
-        @include lg {
-        }
-
         .carousel-caption {
             bottom: 0 !important;
             right: 0 !important;
@@ -271,6 +268,13 @@ nav {
                 margin-left: 20% !important;
                 direction: ltr !important;
                 text-align: left !important;
+                @include sm {
+                    margin-left: 40% !important;
+                }
+        
+                @include md {
+                    margin-left: 40% !important;
+                }
                 .floter {
                     height: 7px;
                     width: 100px;
@@ -287,9 +291,12 @@ nav {
                     font-family: "Cairo-Bold";
                     margin-top: 3%;
                     line-height: 1.5;
-
                     @include sm {
-                        font-size: $font-h - 5;
+                        font-size: $font-p - 2;
+                    }
+
+                    @include md {
+                        font-size: $font-p - 2;
                     }
 
                     br {
@@ -307,18 +314,19 @@ nav {
                     font-weight: bold;
                     font-family: "Cairo-Bold";
                     margin-top: 2%;
+                    @include sm {
+                        font-size: $font-p - 2;
+                        padding: 1% 3%;
+                    }
+
+                    @include md {
+                        font-size: $font-p - 2;
+                        padding: 1% 3%;
+                    }
                     &:hover {
                         margin-top: 1.5%;
                         transition: all .3s ease-in-out;
                     }
-                }
-            }
-            p {
-                color: $color-white;
-                font-size: $font-p;
-
-                @include sm {
-                    font-size: $font-p - 5;
                 }
             }
         }
