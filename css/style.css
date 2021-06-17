@@ -225,9 +225,14 @@ nav .dropdown-item:hover {
 .slider .carousel-item {
   height: 500px;
 }
-@media (max-width: 768px) {
+@media (min-width: 50px) and (max-width: 567px) {
   .slider .carousel-item {
-    height: 300px !important;
+    height: 300px;
+  }
+}
+@media (min-width: 568px) and (max-width: 768px) {
+  .slider .carousel-item {
+    height: 300px;
   }
 }
 .slider .carousel-item .carousel-caption {
@@ -238,9 +243,14 @@ nav .dropdown-item:hover {
   top: 25% !important;
   color: #F2CE1B;
 }
-@media (max-width: 768px) {
+@media (min-width: 50px) and (max-width: 567px) {
   .slider .carousel-item .carousel-caption {
-    top: 15% !important;
+    top: 15%;
+  }
+}
+@media (min-width: 568px) and (max-width: 768px) {
+  .slider .carousel-item .carousel-caption {
+    top: 15%;
   }
 }
 .slider .carousel-item .carousel-caption div {
@@ -250,24 +260,31 @@ nav .dropdown-item:hover {
   margin-right: 25%;
   margin-top: 3%;
 }
-@media (max-width: 768px) {
-  .slider .carousel-item .carousel-caption div {
-    text-align: center;
-    margin-top: 2%;
-  }
-}
 .slider .carousel-item .carousel-caption div .floter {
   height: 7px;
   width: 100px;
   background: #f2ce1b;
   border: none;
   opacity: 1;
+  position: relative;
+  right: 20px;
   --animate-duration: 1s;
 }
-@media (max-width: 768px) {
+@media (min-width: 50px) and (max-width: 567px) {
   .slider .carousel-item .carousel-caption div .floter {
     height: 2px;
-    width: 40px;
+    width: 50px;
+  }
+}
+@media (min-width: 568px) and (max-width: 768px) {
+  .slider .carousel-item .carousel-caption div .floter {
+    height: 2px;
+    width: 50px;
+  }
+}
+@media (min-width: 769px) {
+  .slider .carousel-item .carousel-caption div .rt {
+    right: 100px !important;
   }
 }
 .slider .carousel-item .carousel-caption div h5 {
@@ -279,13 +296,11 @@ nav .dropdown-item:hover {
 @media (min-width: 50px) and (max-width: 567px) {
   .slider .carousel-item .carousel-caption div h5 {
     font-size: 20px;
-    line-height: 1.2;
   }
 }
 @media (min-width: 568px) and (max-width: 768px) {
   .slider .carousel-item .carousel-caption div h5 {
     font-size: 22px;
-    line-height: 1.2;
   }
 }
 .slider .carousel-item .carousel-caption div button {
@@ -300,23 +315,19 @@ nav .dropdown-item:hover {
   margin-top: 2%;
   --animate-duration: 1s;
 }
-@media (max-width: 768px) {
+@media (min-width: 50px) and (max-width: 567px) {
   .slider .carousel-item .carousel-caption div button {
-    font-size: 18;
-    padding: 1% 3%;
+    font-size: 20px;
+  }
+}
+@media (min-width: 568px) and (max-width: 768px) {
+  .slider .carousel-item .carousel-caption div button {
+    font-size: 22px;
   }
 }
 .slider .carousel-item .carousel-caption div button:hover {
   margin-top: 1.5%;
   transition: all 0.1s ease-in-out;
-}
-.slider .carousel-item .carousel-caption .mar .floter {
-  margin-right: 20%;
-}
-@media (max-width: 768px) {
-  .slider .carousel-item .carousel-caption .mar .floter {
-    margin-right: 10%;
-  }
 }
 .slider img {
   min-width: 100%;
