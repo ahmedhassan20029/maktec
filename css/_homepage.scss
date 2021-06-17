@@ -251,7 +251,7 @@ nav {
     .carousel-item {
         height: 400px;
         @include sm {
-            height: 400px !important;
+            height: 300px !important;
         }
 
         @include md {
