@@ -2,19 +2,8 @@ window.onload = function () { // start relowd page
     "use strict";
     // wow animation
     new WOW().init();
-
     window.onscroll = function () {
         'use strict';
-        if (document.scrollingElement.scrollTop >= 20) {
-            document.querySelector('nav').style.position = 'fixed';
-            document.querySelector('nav').style.zIndex = '999999999999';
-            document.querySelector('nav').style.marginTop = '-59px';
-            document.querySelector('nav').style.width = '100%';
-            document.querySelector('nav').style.borderBottom = '2px solid #333';
-        } else {
-            document.querySelector('nav').style.position = 'static';
-            document.querySelector('nav').style.marginTop = '';
-        }
         // start function run
         if (document.scrollingElement.scrollTop <= 2900) {
             // start function run
@@ -46,13 +35,30 @@ window.onload = function () { // start relowd page
             anmatedCounter(num4, 1, 15, 700);
             // end function run
         }
+        /*
+        if (document.scrollingElement.scrollTop >= 20) {
+            document.querySelector('nav').classList.remove('abs');
+            document.querySelector('nav').classList.add('scrot');
+            document.getElementById('test').style.color = 'black!important';
+
+        } else {
+            document.querySelector('nav').classList.add('abs');
+            document.querySelector('nav').classList.remove('scrot');
+            document.getElementById('test').style.color = '#fff!important';
+        }
+        */
+
     };
+
     new Splide('.splide', {
         type: 'loop',
         autoWidth: true,
         focus: 'center',
     }).mount();
 }; // close relowd page
-if(document.getElementById('bot') > value) {
-    console.log('yes');
+document.querySelector('body .test').onmouseenter = function () {
+    document.querySelector('body .test i').classList.add('fa-spin');
+}
+document.querySelector('body .test').onmouseleave = function () {
+    document.querySelector('body .test i').classList.remove('fa-spin');
 }

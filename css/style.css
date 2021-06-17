@@ -28,6 +28,10 @@
   font-family: "Cairo-SemiBold";
   src: url(../font/Cairo-SemiBold.ttf);
 }
+@font-face {
+  font-family: "Cairo-Bold";
+  src: url(../font/Cairo-Bold.ttf);
+}
 body {
   background-color: #f5f2f2;
   font-family: "Cairo-SemiBold";
@@ -201,43 +205,84 @@ nav .dropdown-item:hover {
   transition: all 0.3s ease-in-out;
 }
 
+/*
+.abs {
+    position: absolute !important;
+    z-index: 9999999999;
+}
+
+.scrot {
+    position: fixed !important;
+    z-index: 9999999999;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+*/
 /* end nav */
 /* start slider */
-.slider h5 {
-  position: relative;
-  color: #faaf41;
-  font-size: 22px;
+.slider .carousel-item {
+  height: 400px;
+}
+.slider .carousel-item .carousel-caption {
+  bottom: 0 !important;
+  right: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  top: 25% !important;
+  color: #F2CE1B;
+}
+.slider .carousel-item .carousel-caption div {
+  margin-left: 20% !important;
+  direction: ltr !important;
+  text-align: left !important;
+}
+.slider .carousel-item .carousel-caption div .floter {
+  height: 7px;
+  width: 100px;
+  background: #f2ce1b;
+  border: none;
+  opacity: 1;
+  margin: 0;
+  text-align: inherit;
+}
+.slider .carousel-item .carousel-caption div h5 {
+  font-size: 40px;
+  font-family: "Cairo-Bold";
+  margin-top: 3%;
+  line-height: 1.5;
 }
 @media (max-width: 576px) {
-  .slider h5 {
+  .slider .carousel-item .carousel-caption div h5 {
     font-size: 17px;
   }
 }
-.slider p {
+.slider .carousel-item .carousel-caption div h5 br {
+  margin-top: 5px;
+}
+.slider .carousel-item .carousel-caption div button {
+  color: #F2CE1B;
+  background: transparent;
+  border: 2px solid #F2CE1B;
+  border-radius: 6%;
+  padding: 1% 5%;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Cairo-Bold";
+  margin-top: 2%;
+}
+.slider .carousel-item .carousel-caption div button:hover {
+  margin-top: 1.5%;
+  transition: all 0.3s ease-in-out;
+}
+.slider .carousel-item .carousel-caption p {
   color: #fff;
   font-size: 16px;
 }
 @media (max-width: 576px) {
-  .slider p {
+  .slider .carousel-item .carousel-caption p {
     font-size: 11px;
-  }
-}
-.slider .carousel-item {
-  height: 500px;
-}
-@media (max-width: 576px) {
-  .slider .carousel-item {
-    height: 300px;
-  }
-}
-@media (max-width: 768px) {
-  .slider .carousel-item {
-    height: 300px;
-  }
-}
-@media (max-width: 992px) {
-  .slider .carousel-item {
-    height: 300;
   }
 }
 .slider img {
@@ -247,10 +292,13 @@ nav .dropdown-item:hover {
 .slider .overshow {
   width: 100%;
   height: 100%;
-  background-color: rgba(6, 6, 6, 0.46);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   z-index: 0;
+}
+.slider .carousel-indicators {
+  display: none;
 }
 
 /* end slider */
@@ -298,7 +346,7 @@ nav .dropdown-item:hover {
   font-size: 15px;
   line-height: 1.95;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .hlper .sections-one article p {
     font-size: 12px;
   }
@@ -312,7 +360,7 @@ nav .dropdown-item:hover {
 }
 .aboutmactec .backimg .overlay {
   height: 100%;
-  background-color: rgba(0, 51, 102, 0.5);
+  background-color: rgba(0, 51, 102, 0.4);
   height: 400px;
   display: flex;
   align-items: center;
