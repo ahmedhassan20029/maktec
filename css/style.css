@@ -276,9 +276,15 @@ nav .dropdown-item:hover {
   line-height: 1.5;
   --animate-duration: 1s;
 }
-@media (max-width: 768px) {
+@media (min-width: 50px) and (max-width: 567px) {
   .slider .carousel-item .carousel-caption div h5 {
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+@media (min-width: 568px) and (max-width: 768px) {
+  .slider .carousel-item .carousel-caption div h5 {
+    font-size: 22px;
     line-height: 1.2;
   }
 }

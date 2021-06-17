@@ -291,9 +291,15 @@ nav {
                     font-family: "Cairo-Bold";
                     line-height: 1.5;
                     --animate-duration: 1s;
-                    @include md {
-                        font-size: 30px;
+                    @media (min-width: 50px) and (max-width: 567px){
+                        font-size: 20px;
                         line-height: 1.2;
+
+                    }
+                    @media (min-width: 568px) and (max-width: 768px){
+                        font-size: 22px;
+                        line-height: 1.2;
+
                     }
                 }
 
