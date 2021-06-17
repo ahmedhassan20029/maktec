@@ -236,74 +236,67 @@ nav .dropdown-item:hover {
   }
 }
 .slider .carousel-item .carousel-caption {
-  bottom: 0 !important;
-  right: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  top: 25% !important;
   color: #F2CE1B;
 }
 @media (min-width: 50px) and (max-width: 567px) {
   .slider .carousel-item .carousel-caption {
-    top: 15%;
+    top: 60px;
+    right: 0;
   }
 }
 @media (min-width: 568px) and (max-width: 768px) {
   .slider .carousel-item .carousel-caption {
-    top: 15%;
+    top: 60px;
   }
 }
-.slider .carousel-item .carousel-caption div {
-  margin-left: 20% !important;
-  /*direction: ltr !important;*/
-  text-align: center !important;
-  margin-right: 25%;
-  margin-top: 3%;
+@media (min-width: 769px) {
+  .slider .carousel-item .carousel-caption {
+    top: 150px;
+  }
 }
-.slider .carousel-item .carousel-caption div .floter {
+.slider .carousel-item .carousel-caption div div .floter {
   height: 7px;
   width: 100px;
   background: #f2ce1b;
   border: none;
   opacity: 1;
-  position: relative;
-  right: 20px;
+  position: absolute;
+  right: 40%;
+  top: 0;
   --animate-duration: 1s;
 }
 @media (min-width: 50px) and (max-width: 567px) {
-  .slider .carousel-item .carousel-caption div .floter {
+  .slider .carousel-item .carousel-caption div div .floter {
     height: 2px;
     width: 50px;
   }
 }
 @media (min-width: 568px) and (max-width: 768px) {
-  .slider .carousel-item .carousel-caption div .floter {
+  .slider .carousel-item .carousel-caption div div .floter {
     height: 2px;
     width: 50px;
   }
 }
-@media (min-width: 769px) {
-  .slider .carousel-item .carousel-caption div .rt {
-    right: 100px !important;
-  }
+.slider .carousel-item .carousel-caption div div {
+  text-align: center;
 }
-.slider .carousel-item .carousel-caption div h5 {
+.slider .carousel-item .carousel-caption div div h5 {
   font-size: 40px;
   font-family: "Cairo-Bold";
   line-height: 1.5;
   --animate-duration: 1s;
 }
 @media (min-width: 50px) and (max-width: 567px) {
-  .slider .carousel-item .carousel-caption div h5 {
+  .slider .carousel-item .carousel-caption div div h5 {
     font-size: 20px;
   }
 }
 @media (min-width: 568px) and (max-width: 768px) {
-  .slider .carousel-item .carousel-caption div h5 {
+  .slider .carousel-item .carousel-caption div div h5 {
     font-size: 22px;
   }
 }
-.slider .carousel-item .carousel-caption div button {
+.slider .carousel-item .carousel-caption div div button {
   color: #F2CE1B;
   background: transparent;
   border: 2px solid #F2CE1B;
@@ -316,16 +309,16 @@ nav .dropdown-item:hover {
   --animate-duration: 1s;
 }
 @media (min-width: 50px) and (max-width: 567px) {
-  .slider .carousel-item .carousel-caption div button {
+  .slider .carousel-item .carousel-caption div div button {
     font-size: 20px;
   }
 }
 @media (min-width: 568px) and (max-width: 768px) {
-  .slider .carousel-item .carousel-caption div button {
+  .slider .carousel-item .carousel-caption div div button {
     font-size: 22px;
   }
 }
-.slider .carousel-item .carousel-caption div button:hover {
+.slider .carousel-item .carousel-caption div div button:hover {
   margin-top: 1.5%;
   transition: all 0.1s ease-in-out;
 }
