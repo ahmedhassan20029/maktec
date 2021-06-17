@@ -250,12 +250,8 @@ nav {
 .slider {
     .carousel-item {
         height: 500px;
-        @include sm {
-            height: 200px !important;
-        }
-
         @include md {
-            height: 200px !important;
+            height: 300px !important;
         }
         .carousel-caption {
             bottom: 0 !important;
@@ -264,17 +260,18 @@ nav {
             padding-bottom: 0 !important;
             top: 25% !important;
             color: #F2CE1B;
+            @include md {
+                top: 15%!important;
+            }
             div {
                 margin-left: 20% !important;
                 /*direction: ltr !important;*/
                 text-align: center !important;
                 margin-right: 25%;
-                @include sm {
-                    margin-left: 40% !important;
-                }
-        
+                margin-top: 3%;
                 @include md {
-                    margin-left: 40% !important;
+                    text-align: center;
+                    margin-top: 2%;
                 }
                 .floter {
                     height: 7px;
@@ -283,25 +280,20 @@ nav {
                     border: none;
                     opacity: 1;
                     --animate-duration: 1s;
+                    @include md {
+                        height: 2px;
+                        width: 40px;
+                    }
                 }
 
                 h5 {
-
                     font-size: 40px;
                     font-family: "Cairo-Bold";
-                    margin-top: 3%;
                     line-height: 1.5;
                     --animate-duration: 1s;
-                    @include sm {
-                        font-size: $font-p - 2;
-                    }
-
                     @include md {
-                        font-size: $font-p - 2;
-                    }
-
-                    br {
-                        margin-top: 5px;
+                        font-size: 30px;
+                        line-height: 1.2;
                     }
                 }
 
@@ -316,13 +308,8 @@ nav {
                     font-family: "Cairo-Bold";
                     margin-top: 2%;
                     --animate-duration: 1s;
-                    @include sm {
-                        font-size: $font-p - 2;
-                        padding: 1% 3%;
-                    }
-
                     @include md {
-                        font-size: $font-p - 2;
+                        font-size: 18;
                         padding: 1% 3%;
                     }
                     &:hover {
@@ -332,10 +319,13 @@ nav {
                 }
             }
             .mar {
-                margin-right: 20%;
                 .floter {
                     margin-right: 20%;
+                    @include md {
+                        margin-right: 10%;
+                    }
                 }
+
             }
         }
     }
