@@ -225,6 +225,11 @@ nav .dropdown-item:hover {
 .slider .carousel-item {
   height: 400px;
 }
+@media (max-width: 576px) {
+  .slider .carousel-item {
+    height: 400px !important;
+  }
+}
 .slider .carousel-item .carousel-caption {
   bottom: 0 !important;
   right: 0 !important;
